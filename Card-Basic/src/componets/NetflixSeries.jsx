@@ -1,9 +1,10 @@
 import seriesData from "../api/seriesData.json";
 import { SeriesCard } from "./SeriesCard";
+import "../componets/NetflixSeries.css";
 
 const NetflixSeries = () => {
   return (
-    <ul style={{ listStyleType: "none", padding: "10px" }}>
+    <ul className="grid grid-three-cols">
       {seriesData.map((currElement) => (
         <SeriesCard key={currElement.id} data={currElement} />
       ))}

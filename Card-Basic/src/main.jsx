@@ -1,12 +1,12 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-// import './index.css'
-// import { App } from "./App.jsx";
-import ProfileCard from "./componets/ProfileCard";
+import "./index.css";
+import { App } from "./App.jsx";
+// import ProfileCard from "./componets/ProfileCard";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    {/* <App /> */}
-    <ProfileCard />
+    <App />
+    {/* <ProfileCard /> */}
   </StrictMode>
 );
