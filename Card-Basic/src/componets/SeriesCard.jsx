@@ -10,6 +10,8 @@ export const SeriesCard = ({ data }) => {
     backgroundColor: "var(--btn-hover-bg-color)",
     color: "var(--bg-color)",
   };
+  // Apply css condition like this way
+  const ratingClass = rating >= 8.5 ? "super-hit" : "average";
 
   return (
     <li className="card">
@@ -17,8 +19,16 @@ export const SeriesCard = ({ data }) => {
         <img src={img_url} alt={name} width="40%" height="40%" />
       </div>
       <div className="card-content">
-        <h2>Name : {name} </h2>
-        <h3>Rating : {rating} </h3>
+        <h3>Name : {name} </h3>
+        <h4>
+          Rating :<span className={`rating ${ratingClass} `}>{rating}</span>
+          {/* Apply css condition using class  */}
+          {/* <span
+            className={`rating ${rating >= 8.5 ? "super-hit" : "average"} `}
+          >
+            {rating}
+          </span> */}
+        </h4>
         <p>Summary : {description}</p>
         <p>Genre : {genre.join(", ")}</p>
         <p>Cast : {cast.join(", ")}</p>
