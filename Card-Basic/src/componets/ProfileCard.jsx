@@ -45,9 +45,22 @@ export default Profile;
 //   );
 // }
 
-// using destructure
-function ProfileCard(props) {
-  const { name, age, greeting, children } = props;
+// // using destructure
+// function ProfileCard(props) {
+//   const { name, age, greeting, children } = props;
+//   return (
+//     <>
+//       <h2>Name : {name}</h2>
+//       <h3>Age : {age}</h3>
+//       <p>Greeting : {greeting}</p>
+//       <div>{children}</div>
+//     </>
+//   );
+// }
+
+// as pass parameter
+
+function ProfileCard({ name, age, greeting, children }) {
   return (
     <>
       <h2>Name : {name}</h2>
