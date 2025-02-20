@@ -7,8 +7,10 @@ export const SeriesCard = ({ data }) => {
     padding: "1.2rem 2.4rem",
     border: "none",
     fontSize: "1.6rem",
-    backgroundColor: "var(--btn-hover-bg-color)",
-    color: "var(--bg-color)",
+    backgroundColor: `${rating >= 8.5 ? "#79eb79" : "#e7e76b"}`,
+    color: "var(--btn-color)",
+    fontWeight: "bold",
+    cursor: "pointer",
   };
   // Apply css condition like this way
   const ratingClass = rating >= 8.5 ? "super-hit" : "average";

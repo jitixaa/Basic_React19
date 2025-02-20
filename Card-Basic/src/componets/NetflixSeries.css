@@ -26,8 +26,9 @@ img {
 }
 
 .card-heading {
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  margin-bottom: 5.5rem;
+  font-size: 3.5rem;
+  text-align: center;
   font-weight: 600;
   color: #333;
 }
@@ -54,10 +55,10 @@ img {
   background: #0056b3;
 }
 .super-hit {
-  background-color: rgb(147, 238, 147);
+  background-color: #79eb79;
 }
 .average {
-  background-color: rgb(235, 235, 157);
+  background-color: #e7e76b;
 }
 .rating {
   padding: 0.3rem 1.8rem;
