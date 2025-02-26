@@ -2,8 +2,7 @@ import styles from "../componets/Netflix.module.css";
 import styled from "styled-components";
 
 export const SeriesCard = ({ data }) => {
-  const { id, img_url, name, rating, description, genre, cast, watch_url } =
-    data;
+  const { img_url, name, rating, description, genre, cast, watch_url } = data;
 
   // Inline CSS apply for the button
   // const btn_style = {}
@@ -51,7 +50,7 @@ export const SeriesCard = ({ data }) => {
             {rating}
           </span> */}
         </h4>
-        <p>Summary : {description}</p>
+        <p className="text-3xl font-bold underline">Summary : {description}</p>
         <p>Genre : {genre.join(", ")}</p>
         <p>Cast : {cast.join(", ")}</p>
 
