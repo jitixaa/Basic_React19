@@ -1,7 +1,8 @@
 // import NetflixSeries from "./componets/NetflixSeries";
 // import styles from "./componets/Netflix.module.css";
 import { ThemeProvider } from "styled-components";
-import EventHandling from "./componets/EventHandling";
+// import EventHandling from "./componets/EventHandling";
+import { EventHandlingProps } from "./componets/EventHandlingProps";
 
 export const App = () => {
   const theme = {
@@ -20,7 +21,8 @@ export const App = () => {
       <section className="container">
         {/* <h1 className={styles["card-heading"]}>List Of Best Series</h1>
         <NetflixSeries /> */}
-        <EventHandling />
+        {/* <EventHandling /> */}
+        <EventHandlingProps />
       </section>
     </ThemeProvider>
   );

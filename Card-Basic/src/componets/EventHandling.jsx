@@ -41,6 +41,9 @@ const EventHandling = () => {
       <button onClick={() => handleWelcomeUser("Jitixaa kothiya")}>
         Click Me
       </button>
+      <button onClick={() => handleWelcomeUser("Punita kothiya")}>
+        Click Me
+      </button>
     </div>
   );
 };
