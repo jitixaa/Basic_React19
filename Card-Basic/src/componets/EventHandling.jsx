@@ -1,5 +1,3 @@
-import "../componets/EventHandling.css";
-
 const EventHandling = () => {
   //   function handleButtonClick() {
   //     alert("Hello ! How are you");

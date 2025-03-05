@@ -1,9 +1,6 @@
-// import NetflixSeries from "./componets/NetflixSeries";
-// import styles from "./componets/Netflix.module.css";
 import { ThemeProvider } from "styled-components";
-// import EventHandling from "./componets/EventHandling";
-// import { EventHandlingProps } from "./componets/EventHandlingProps";
-import { EventPropogation } from "./componets/EventPropogation";
+import { State } from "./componets/hooks/State";
+import "./componets/EventHandling.css";
 
 export const App = () => {
   const theme = {
@@ -20,11 +17,7 @@ export const App = () => {
     // <></> Sugar Formate
     <ThemeProvider theme={theme}>
       <section className="container">
-        {/* <h1 className={styles["card-heading"]}>List Of Best Series</h1>
-        <NetflixSeries /> */}
-        {/* <EventHandling /> */}
-        {/* <EventHandlingProps /> */}
-        <EventPropogation />
+        <State />
       </section>
     </ThemeProvider>
   );

@@ -1,4 +1,3 @@
-import "../componets/EventHandling.css";
 export const EventHandlingProps = () => {
   const handleClickMe = (user) => {
     console.log(`Hello I am ${user}`);
