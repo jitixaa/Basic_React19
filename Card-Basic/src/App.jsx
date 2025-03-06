@@ -1,5 +1,6 @@
 import { ThemeProvider } from "styled-components";
-import { State } from "./componets/hooks/State";
+// import { State } from "./componets/hooks/State";
+import { ChaiCode } from "./componets/ChaiCode";
 import "./componets/EventHandling.css";
 
 export const App = () => {
@@ -17,7 +18,8 @@ export const App = () => {
     // <></> Sugar Formate
     <ThemeProvider theme={theme}>
       <section className="container">
-        <State />
+        {/* <State /> */}
+        <ChaiCode />
       </section>
     </ThemeProvider>
   );
