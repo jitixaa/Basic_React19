@@ -1,7 +1,9 @@
 import { ThemeProvider } from "styled-components";
 // import { State } from "./componets/hooks/State";
-import { ChaiCode } from "./componets/ChaiCode";
+// import { ChaiCode } from "./componets/ChaiCode";
+// import { ArrayComponets } from "./componets/ArrayComponets";
 import "./componets/EventHandling.css";
+import { LifingState } from "./componets/LifingState";
 
 export const App = () => {
   const theme = {
@@ -19,7 +21,9 @@ export const App = () => {
     <ThemeProvider theme={theme}>
       <section className="container">
         {/* <State /> */}
-        <ChaiCode />
+        {/* <ChaiCode /> */}
+        {/* <ArrayComponets /> */}
+        <LifingState />
       </section>
     </ThemeProvider>
   );
